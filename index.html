@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PonyFlix</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-com" href="medium.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Metamorphous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Si quitas el navbar-light quitas el icono de desplegable, por lo tanto tienes que  -->
+    <nav class="navbar navbar-expand-lg d-flex container-fluid navbar-light">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#"><img src="medium.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#Descubrir">Descubrir</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Estrenos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Comedia</a></li>
+                  <li><a class="dropdown-item" href="#">Accion</a></li>
+                  <li><a class="dropdown-item" href="#">Romántico</a></li>
+                  <li><a class="dropdown-item" href="#">Guerra</a></li>
+                  <li><a class="dropdown-item" href="#">Drama</a></li>
+                  <li><a class="dropdown-item" href="#">Terror</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 barrabusqueda" type="search" placeholder="¿Qué quieres ver..?" aria-label="Search">
+              <button class="btn-search" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <section class="carousel seccion-oscura" id="inicio">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img src="img/series.jpg" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption">
+                  <a href="https://www.google.com/search?q=mando+delante+de+tele&sca_esv=b2f01f239ded54f9&udm=2&biw=1536&bih=695&sxsrf=ACQVn08uhJo58UjcDrnCRs7VgjgreUibOw%3A1712417414003&ei=hWoRZrDtPKu8i-gPsNqjkAs&ved=0ahUKEwjww6z9862FAxUr3gIHHTDtCLIQ4dUDCBA&uact=5&oq=mando+delante+de+tele&gs_lp=Egxnd3Mtd2l6LXNlcnAiFW1hbmRvIGRlbGFudGUgZGUgdGVsZUipwwJQtq8CWJPDAnAFeACQAQCYAYcBoAGAD6oBBDE1LjW4AQPIAQD4AQGYAhKgAoQKwgIKEAAYgAQYigUYQ8ICBhAAGAgYHsICBxAAGIAEGBjCAgQQIxgnwgIIEAAYgAQYsQPCAgUQABiABMICDhAAGIAEGIoFGLEDGIMBwgINEAAYgAQYigUYQxixA8ICEBAAGIAEGIoFGEMYsQMYgwGYAwCIBgGSBwQxNS4zoAeoOA&sclient=gws-wiz-serp#vhid=iPyhepOLo2MYbM&vssid=mosaic">Tus series y películas</a>
+                  <p>Continua por donde dejaste tus seríes y películas!</p>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="img/alquilerpeli.jpeg" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <a>Alquilar</a>
+                  <p>¿Quieres alquilar algo que se encuentra en nuestro catálogo?</p>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="img/pago.webp" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <a>Planes</a>
+                  <p>¡Mejora tu plan actual!</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+
+      <section class="Descubrir seccion-clara text-center" id="Descubrir">
+        <h2>¡¿No sabes que ver?!</h2>
+        <h3>Echa un vistazo a nuestras recomendaciones!</h3>
+        <!-- Para que se vean de seguido y en columnas las recomendacioens -->
+        <div class="container text-center recomedaciones">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="seccion-recomendacion">
+                <h4>Juego de tronos</h4>
+                <img src="img/got.jpg" alt="">
+                  <div class="overlay">
+                      <a href="">¡Quiero verlo!</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="seccion-recomendacion">
+                <h4>The office</h4>
+                <img src="img/ofise.jpg" alt="">
+                  <div class="overlay">
+                      <a href="">¡Quiero verlo!</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="seccion-recomendacion">
+                <h4>The boys</h4>
+                <img src="img/theboi.jpg" alt="">
+                  <div class="overlay">
+                      <a href="">¡Quiero verlo!</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            
+        <div class="container text-center recomedaciones">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="seccion-recomendacion">
+                <h4>El señor de los anillos</h4>
+                <img src="img/anillo.jpg" alt="">
+                  <div class="overlay">
+                      <a href="">¡Quiero verlo!</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="seccion-recomendacion">
+                <h4>Inazuma eleven</h4>
+                <img src="img/inazuma.jpg" alt="">
+                  <div class="overlay">
+                      <a href="">¡Quiero verlo!</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="seccion-recomendacion">
+                <h4>Breaking bad</h4>
+                <img src="img/briking.jpg" alt="">
+                  <div class="overlay">
+                      <a href="">¡Quiero verlo!</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
